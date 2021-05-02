@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: 'GermaniaOne';
+  src: url('../assets/fonts/GermaniaOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'Signika';
+  src: url('../assets/fonts/Signika-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('../assets/fonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
+@tailwind utilities;
+
+@layer base {
+  ::-moz-selection {
+    background-color: #6e53be;
+    color: #fff;
+  }
+  ::selection {
+    background-color: #6e53be;
+    color: #fff;
+  }
+  h1 {
+    font-size: theme('fontSize.5xl');
+    font-family: theme('fontFamily.serif');
+    color: rgb(17, 24, 39);
+  }
+  h2 {
+    font-size: theme('fontSize.4xl');
+    font-family: theme('fontFamily.serif');
+    color: #6e53be;
+  }
+  h3 {
+    font-size: theme('fontSize.3xl');
+    font-family: theme('fontFamily.serif');
+    color: #6e53be;
+    border-bottom: 2px solid;
+  }
+  h4 {
+    font-size: theme('fontSize.2xl');
+    font-family: theme('fontFamily.serif');
+    color: #6e53be;
+  }
+  h5 {
+    font-size: theme('fontSize.xl');
+    font-weight: theme('fontWeight.medium');
+    font-family: theme('fontFamily.sans');
+    font-variant: small-caps;
+    color: rgb(17, 24, 39);
+  }
+  div,
+  body,
+  p,
+  strong {
+    font-family: theme('fontFamily.body');
+  }
+  blockquote {
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 8px;
+    border-right-width: 4px;
+    border-radius: theme('borderRadius.2xl');
+    border-color: #6e53be;
+    background-color: #f0ecfe;
+    padding: theme('padding.2');
+    padding-left: theme('padding.4');
+    padding-right: theme('padding.4');
+    margin-top: theme('margin.2');
+    margin-bottom: theme('margin.3');
+  }
+  table {
+    font-family: theme('fontFamily.sans');
+    width: 100% !important;
+  }
+  th,
+  td {
+    padding: theme('padding.1');
+    padding-left: theme('padding.4');
+    padding-right: theme('padding.4');
+  }
+  tr:nth-child(even) {
+    background-color: #f0ecfe;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: theme('margin.4');
+    padding: theme('padding.2');
+  }
+  ol {
+    list-style-type: decimal;
+    margin-left: theme('margin.4');
+    padding: theme('padding.2');
+  }
+  .info a {
+    color: #6e53be;
+    text-decoration: underline solid 0.125rem;
+  }
+  .info a:hover {
+    color: rgb(17, 24, 39);
+    text-decoration: underline solid 0.2rem;
+  }
+}
